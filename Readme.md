@@ -1,0 +1,1 @@
+#STIKI Programming Contest
