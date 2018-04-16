@@ -1,1 +1,1 @@
-#STIKI Programming Contest
+# STIKI Programming Contest
