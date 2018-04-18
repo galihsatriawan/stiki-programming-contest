@@ -24,23 +24,11 @@ int main(){
     FORa(i,0,coklat.size()-1){
         //cout << uang <<endl;
         pair <long long , long long> temp_coklat = coklat[i];
-        if(uang < temp_coklat.first) break;
-        else{
-            if(uang >= (temp_coklat.first * temp_coklat.second)){
-                uang = uang - (temp_coklat.first * temp_coklat.second);
-                banyak = banyak + temp_coklat.second;
-                
-            }else{
-                long long temp_bebek;
-                temp_bebek = 0;
-                while((uang >= temp_coklat.first) && (temp_coklat.second > 0)){
-                    temp_bebek++;
-                    uang -= temp_coklat.first;
-                    temp_coklat.second--;
-                }
-                banyak = banyak + temp_bebek;
-            }
-        }
+        //Ambil coklat seperlunya
+        long long ambil_bebek;
+        ambil_bebek = min(uang/temp_coklat.first,temp_coklat.second);
+        banyak +=ambil_bebek;
+        uang -=(ambil_bebek*temp_coklat.first);
     }
     cout << banyak << endl;
 
