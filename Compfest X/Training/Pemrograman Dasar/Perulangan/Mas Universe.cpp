@@ -9,7 +9,16 @@ using namespace std;
 #define pf printf
 
 int gokil(){
-
+	// Program Mencari nilai terbesar
+	int maxi ;
+	int i,n,bil;
+	cin >> n;
+	cin >> maxi ;
+	For(i,n-1){
+		cin >> bil;
+		maxi = (bil>maxi) ? bil:maxi;
+	}
+	cout << maxi <<endl;
 
     return 0;
 }

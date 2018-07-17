@@ -9,7 +9,17 @@ using namespace std;
 #define pf printf
 
 int gokil(){
-
-
+	int a,b,c,x,z,i;
+	cin >> a >> b >> c >> x;
+	i=1;
+	z = x;
+	z = (a*z+b)%c;
+	while(z!=x){
+		z = (a*z+b)%c;
+		i++;	
+	}
+	
+	cout << i << endl;
+	
     return 0;
 }
