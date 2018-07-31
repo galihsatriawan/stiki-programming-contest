@@ -27,7 +27,7 @@ void r(int index, int k,int n){
 		}
 	}else{	
 		For(i,n){
-			if((abs(arr[index-1]-i) <= k)&& !used[i] ){
+			if((abs(arr[index-1]-i) <= k)&& !used[i] ||(index==1)){
 				used[i] = true;
 				arr[index]= i;
 				r(index+1,k,n);
