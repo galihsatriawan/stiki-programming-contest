@@ -8,9 +8,7 @@ using namespace std;
 #define sf scanf
 #define pf printf
 
-const int N = 1e5+5;
-
 int gokil(){
-
+    int board[100005][100005];
     return 0;
 }
