@@ -11,6 +11,14 @@ using namespace std;
 const int N = 1e5+5;
 
 int gokil(){
-
+    int n,i;
+    LL bil;
+    priority_queue<LL> ls;
+    cin >> n;
+    For(i,n){
+        cin >> bil;
+        ls.push(bil);
+    }
+    cout << ls.top()<<endl;
     return 0;
 }
